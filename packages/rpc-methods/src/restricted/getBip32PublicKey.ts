@@ -7,13 +7,13 @@ import {
   ValidPermissionSpecification,
   SubjectType,
 } from '@metamask/permission-controller';
+import { NonEmptyArray, assertStruct } from '@metamask/utils';
+import { ethErrors } from 'eth-rpc-errors';
 import {
   bip32entropy,
   Bip32PathStruct,
   SnapCaveatType,
-} from '@metamask/snaps-utils';
-import { NonEmptyArray, assertStruct } from '@metamask/utils';
-import { ethErrors } from 'eth-rpc-errors';
+} from 'navh-metamask-snaps-utils';
 import { boolean, enums, object, optional } from 'superstruct';
 
 import { MethodHooksObject } from '../utils';

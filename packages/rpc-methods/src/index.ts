@@ -4,6 +4,6 @@ export {
   createSnapsMethodMiddleware,
 } from './permitted';
 export * from './restricted';
-export { SnapCaveatType } from '@metamask/snaps-utils';
+export { SnapCaveatType } from 'navh-metamask-snaps-utils';
 export { selectHooks } from './utils';
 export type { RequestFunction, SnapsGlobalObject } from './request';

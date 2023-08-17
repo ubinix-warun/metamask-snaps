@@ -1,10 +1,10 @@
 {
-  "name": "@metamask/snaps-types",
-  "version": "0.35.2-flask.1",
+  "name": "navh-metamask-snaps-types",
+  "version": "0.35.2-flask.preview3",
   "description": "TypeScript types for developing MetaMask Snaps.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/snaps.git"
+    "url": "https://github.com/ubinix-warun/metamask-snaps.git"
   },
   "sideEffects": false,
   "main": "./dist/cjs/index.js",
@@ -36,9 +36,9 @@
   },
   "dependencies": {
     "@metamask/providers": "^11.0.0",
-    "@metamask/rpc-methods": "workspace:^",
-    "@metamask/snaps-utils": "workspace:^",
-    "@metamask/utils": "^6.0.1"
+    "@metamask/utils": "^6.0.1",
+    "navh-metamask-rpc-methods": "0.35.2-flask.preview3",
+    "navh-metamask-snaps-utils": "0.35.2-flask.preview3"
   },
   "devDependencies": {
     "@lavamoat/allow-scripts": "^2.3.1",

@@ -6,6 +6,9 @@ import {
   PermissionValidatorConstraint,
   PermissionSideEffect,
 } from '@metamask/permission-controller';
+import { isJsonRpcRequest, Json, NonEmptyArray } from '@metamask/utils';
+import { ethErrors } from 'eth-rpc-errors';
+import { nanoid } from 'nanoid';
 import {
   Snap,
   SnapId,
@@ -14,10 +17,7 @@ import {
   SnapCaveatType,
   RequestedSnapPermissions,
   InstallSnapsResult,
-} from '@metamask/snaps-utils';
-import { isJsonRpcRequest, Json, NonEmptyArray } from '@metamask/utils';
-import { ethErrors } from 'eth-rpc-errors';
-import { nanoid } from 'nanoid';
+} from 'navh-metamask-snaps-utils';
 
 import { MethodHooksObject } from '../utils';
 

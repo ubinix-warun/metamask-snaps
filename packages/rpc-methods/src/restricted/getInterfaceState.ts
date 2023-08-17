@@ -5,9 +5,9 @@ import {
   SubjectType,
   ValidPermissionSpecification,
 } from '@metamask/permission-controller';
-import { ComponentState } from '@metamask/snaps-utils';
 import { NonEmptyArray } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import { ComponentState } from 'navh-metamask-snaps-utils';
 import { MethodHooksObject } from 'src/utils';
 import { StructError, create, object, string } from 'superstruct';
 

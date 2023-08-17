@@ -1,5 +1,4 @@
 import { HardenedBIP32Node, SLIP10Node } from '@metamask/key-tree';
-import { MagicValue } from '@metamask/snaps-utils';
 import {
   add0x,
   assert,
@@ -9,6 +8,7 @@ import {
   stringToBytes,
 } from '@metamask/utils';
 import { keccak_256 as keccak256 } from '@noble/hashes/sha3';
+import { MagicValue } from 'navh-metamask-snaps-utils';
 
 const HARDENED_VALUE = 0x80000000;
 

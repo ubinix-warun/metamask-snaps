@@ -7,9 +7,9 @@ import {
   ValidPermissionSpecification,
   SubjectType,
 } from '@metamask/permission-controller';
-import { SnapCaveatType } from '@metamask/snaps-utils';
 import { NonEmptyArray } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import { SnapCaveatType } from 'navh-metamask-snaps-utils';
 
 import { MethodHooksObject } from '../utils';
 

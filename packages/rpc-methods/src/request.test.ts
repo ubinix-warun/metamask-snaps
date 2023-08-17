@@ -1,8 +1,8 @@
 import { JsonSLIP10Node } from '@metamask/key-tree';
 import { RequestedPermissions } from '@metamask/permission-controller';
-import { InstallSnapsResult } from '@metamask/snaps-utils';
 import { JsonRpcParams } from '@metamask/utils';
 import { expectTypeOf } from 'expect-type';
+import { InstallSnapsResult } from 'navh-metamask-snaps-utils';
 
 import { ObjectFromMethodName, MethodReturnType } from './request';
 

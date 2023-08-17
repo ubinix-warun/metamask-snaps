@@ -1,11 +1,11 @@
 import { decrypt, encrypt } from '@metamask/browser-passworder';
 import { PermissionType, SubjectType } from '@metamask/permission-controller';
+import { ethErrors } from 'eth-rpc-errors';
 import {
   MOCK_LOCAL_SNAP_ID,
   MOCK_SNAP_ID,
   TEST_SECRET_RECOVERY_PHRASE_BYTES,
-} from '@metamask/snaps-utils/test-utils';
-import { ethErrors } from 'eth-rpc-errors';
+} from 'navh-metamask-snaps-utils/test-utils';
 
 import {
   getManageStateImplementation,

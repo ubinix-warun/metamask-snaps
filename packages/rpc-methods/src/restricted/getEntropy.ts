@@ -5,9 +5,9 @@ import {
   ValidPermissionSpecification,
   SubjectType,
 } from '@metamask/permission-controller';
-import { SIP_6_MAGIC_VALUE } from '@metamask/snaps-utils';
 import { assertStruct, Hex, NonEmptyArray } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import { SIP_6_MAGIC_VALUE } from 'navh-metamask-snaps-utils';
 import { Infer, literal, object, optional, string } from 'superstruct';
 
 import { deriveEntropy, MethodHooksObject } from '../utils';

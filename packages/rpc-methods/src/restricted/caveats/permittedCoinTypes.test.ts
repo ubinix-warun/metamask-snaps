@@ -1,4 +1,4 @@
-import { SnapCaveatType } from '@metamask/snaps-utils';
+import { SnapCaveatType } from 'navh-metamask-snaps-utils';
 
 import {
   permittedCoinTypesCaveatMapper,

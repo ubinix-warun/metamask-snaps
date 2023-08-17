@@ -1,5 +1,5 @@
 import { PermissionType, SubjectType } from '@metamask/permission-controller';
-import { heading, panel, text } from '@metamask/snaps-ui';
+import { heading, panel, text } from 'navh-metamask-snaps-ui';
 
 import {
   dialogBuilder,

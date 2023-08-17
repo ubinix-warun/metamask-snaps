@@ -1,9 +1,9 @@
-import { InstallSnapsResult } from '@metamask/snaps-utils';
 import {
   PermittedHandlerExport,
   PendingJsonRpcResponse,
   JsonRpcEngineEndCallback,
 } from '@metamask/types';
+import { InstallSnapsResult } from 'navh-metamask-snaps-utils';
 
 import { MethodHooksObject } from '../utils';
 

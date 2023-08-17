@@ -1,6 +1,6 @@
 import { PermissionType, SubjectType } from '@metamask/permission-controller';
-import { SnapCaveatType } from '@metamask/snaps-utils';
-import { TEST_SECRET_RECOVERY_PHRASE_BYTES } from '@metamask/snaps-utils/test-utils';
+import { SnapCaveatType } from 'navh-metamask-snaps-utils';
+import { TEST_SECRET_RECOVERY_PHRASE_BYTES } from 'navh-metamask-snaps-utils/test-utils';
 
 import {
   getBip32PublicKeyBuilder,

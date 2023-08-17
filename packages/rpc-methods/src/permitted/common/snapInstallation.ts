@@ -1,9 +1,9 @@
 import { RequestedPermissions } from '@metamask/permission-controller';
-import { InstallSnapsResult } from '@metamask/snaps-utils';
 import { isObject } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import { InstallSnapsResult } from 'navh-metamask-snaps-utils';
 
-export type { InstallSnapsResult } from '@metamask/snaps-utils';
+export type { InstallSnapsResult } from 'navh-metamask-snaps-utils';
 
 export type InstallSnapsHook = (
   requestedSnaps: RequestedPermissions,

@@ -1,5 +1,5 @@
 import { SubjectType, PermissionType } from '@metamask/permission-controller';
-import { MOCK_SNAP_ID } from '@metamask/snaps-utils/test-utils';
+import { MOCK_SNAP_ID } from 'navh-metamask-snaps-utils/test-utils';
 
 import {
   methodName,

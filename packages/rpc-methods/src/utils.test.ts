@@ -1,5 +1,5 @@
-import { SIP_6_MAGIC_VALUE } from '@metamask/snaps-utils';
-import { TEST_SECRET_RECOVERY_PHRASE_BYTES } from '@metamask/snaps-utils/test-utils';
+import { SIP_6_MAGIC_VALUE } from 'navh-metamask-snaps-utils';
+import { TEST_SECRET_RECOVERY_PHRASE_BYTES } from 'navh-metamask-snaps-utils/test-utils';
 
 import { ENTROPY_VECTORS } from './__fixtures__';
 import { deriveEntropy } from './utils';

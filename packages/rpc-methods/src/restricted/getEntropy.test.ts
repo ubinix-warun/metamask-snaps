@@ -2,7 +2,7 @@ import { PermissionType, SubjectType } from '@metamask/permission-controller';
 import {
   MOCK_SNAP_ID,
   TEST_SECRET_RECOVERY_PHRASE_BYTES,
-} from '@metamask/snaps-utils/test-utils';
+} from 'navh-metamask-snaps-utils/test-utils';
 
 import { getEntropyBuilder } from './getEntropy';
 

@@ -12,9 +12,9 @@ import {
   ValidPermissionSpecification,
   SubjectType,
 } from '@metamask/permission-controller';
-import { Bip32Entropy, SnapCaveatType } from '@metamask/snaps-utils';
 import { NonEmptyArray, assert } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import { Bip32Entropy, SnapCaveatType } from 'navh-metamask-snaps-utils';
 
 import { MethodHooksObject } from '../utils';
 

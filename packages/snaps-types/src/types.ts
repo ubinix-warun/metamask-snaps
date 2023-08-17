@@ -11,8 +11,8 @@ export {
   DialogType,
   NotificationType,
   ManageStateOperation,
-} from '@metamask/rpc-methods';
-export type { SnapsGlobalObject } from '@metamask/rpc-methods';
+} from 'navh-metamask-rpc-methods';
+export type { SnapsGlobalObject } from 'navh-metamask-rpc-methods';
 export type {
   AccountId,
   ChainId,
@@ -21,4 +21,4 @@ export type {
   OnTransactionHandler,
   OnTransactionResponse,
   ComponentState,
-} from '@metamask/snaps-utils';
+} from 'navh-metamask-snaps-utils';

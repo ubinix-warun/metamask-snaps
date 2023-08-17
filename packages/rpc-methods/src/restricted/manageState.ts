@@ -6,10 +6,6 @@ import {
   SubjectType,
 } from '@metamask/permission-controller';
 import {
-  EnumToUnion,
-  STATE_ENCRYPTION_MAGIC_VALUE,
-} from '@metamask/snaps-utils';
-import {
   Json,
   NonEmptyArray,
   isObject,
@@ -19,6 +15,10 @@ import {
   Hex,
 } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import {
+  EnumToUnion,
+  STATE_ENCRYPTION_MAGIC_VALUE,
+} from 'navh-metamask-snaps-utils';
 
 import { deriveEntropy, MethodHooksObject } from '../utils';
 

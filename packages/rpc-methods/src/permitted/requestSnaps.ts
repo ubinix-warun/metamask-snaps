@@ -4,11 +4,6 @@ import {
   Caveat,
 } from '@metamask/permission-controller';
 import {
-  SnapCaveatType,
-  SnapsPermissionRequest,
-  verifyRequestedSnapPermissions,
-} from '@metamask/snaps-utils';
-import {
   PermittedHandlerExport,
   JsonRpcRequest,
   PendingJsonRpcResponse,
@@ -16,6 +11,11 @@ import {
 } from '@metamask/types';
 import { hasProperty, isObject, Json } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import {
+  SnapCaveatType,
+  SnapsPermissionRequest,
+  verifyRequestedSnapPermissions,
+} from 'navh-metamask-snaps-utils';
 
 import { WALLET_SNAP_PERMISSION_KEY } from '../restricted/invokeSnap';
 import { MethodHooksObject } from '../utils';

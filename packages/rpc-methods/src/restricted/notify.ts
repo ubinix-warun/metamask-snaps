@@ -5,9 +5,9 @@ import {
   ValidPermissionSpecification,
   SubjectType,
 } from '@metamask/permission-controller';
-import { EnumToUnion } from '@metamask/snaps-utils';
 import { NonEmptyArray, isObject } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import { EnumToUnion } from 'navh-metamask-snaps-utils';
 
 import { MethodHooksObject } from '../utils';
 

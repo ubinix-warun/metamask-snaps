@@ -2,7 +2,6 @@ import {
   RequestedPermissions,
   PermissionConstraint,
 } from '@metamask/permission-controller';
-import { InstallSnapsResult, SnapCaveatType } from '@metamask/snaps-utils';
 import {
   MOCK_SNAP_ID,
   MOCK_ORIGIN,
@@ -15,6 +14,7 @@ import {
   PendingJsonRpcResponse,
 } from '@metamask/types';
 import { JsonRpcEngine } from 'json-rpc-engine';
+import { InstallSnapsResult, SnapCaveatType } from 'navh-metamask-snaps-utils';
 
 import { WALLET_SNAP_PERMISSION_KEY } from '../restricted/invokeSnap';
 import {

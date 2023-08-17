@@ -2,14 +2,14 @@ import {
   PermissionsRequest,
   PermissionType,
 } from '@metamask/permission-controller';
-import { SnapCaveatType } from '@metamask/snaps-utils';
+import { SnapCaveatType } from 'navh-metamask-snaps-utils';
 import {
   MOCK_SNAP_ID,
   MOCK_ORIGIN,
   getTruncatedSnap,
   MockControllerMessenger,
   MOCK_LOCAL_SNAP_ID,
-} from '@metamask/snaps-utils/test-utils';
+} from 'navh-metamask-snaps-utils/test-utils';
 
 import {
   invokeSnapBuilder,

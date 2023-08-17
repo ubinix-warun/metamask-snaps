@@ -1,9 +1,9 @@
 {
-  "name": "@metamask/snaps-ui",
-  "version": "0.35.2-flask.1",
+  "name": "navh-metamask-snaps-ui",
+  "version": "0.35.2-flask.preview3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/snaps.git"
+    "url": "https://github.com/ubinix-warun/metamask-snaps.git"
   },
   "sideEffects": false,
   "main": "./dist/cjs/index.js",

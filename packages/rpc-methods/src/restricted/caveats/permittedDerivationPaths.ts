@@ -3,14 +3,14 @@ import {
   PermissionConstraint,
   RestrictedMethodCaveatSpecificationConstraint,
 } from '@metamask/permission-controller';
+import { Json, assertStruct } from '@metamask/utils';
+import { ethErrors } from 'eth-rpc-errors';
 import {
   SnapCaveatType,
   Bip32Entropy,
   Bip32EntropyStruct,
   isEqual,
-} from '@metamask/snaps-utils';
-import { Json, assertStruct } from '@metamask/utils';
-import { ethErrors } from 'eth-rpc-errors';
+} from 'navh-metamask-snaps-utils';
 import { array, size, type } from 'superstruct';
 
 /**

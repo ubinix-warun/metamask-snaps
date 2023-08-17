@@ -5,10 +5,10 @@ import {
   ValidPermissionSpecification,
   SubjectType,
 } from '@metamask/permission-controller';
-import { Component, ComponentStruct } from '@metamask/snaps-ui';
-import { EnumToUnion, enumValue } from '@metamask/snaps-utils';
 import { NonEmptyArray } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import { Component, ComponentStruct } from 'navh-metamask-snaps-ui';
+import { EnumToUnion, enumValue } from 'navh-metamask-snaps-utils';
 import {
   create,
   enums,

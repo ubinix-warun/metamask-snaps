@@ -1,4 +1,4 @@
-import { SnapCaveatType, SIP_6_MAGIC_VALUE } from '@metamask/snaps-utils';
+import { SnapCaveatType, SIP_6_MAGIC_VALUE } from 'navh-metamask-snaps-utils';
 
 import {
   permittedDerivationPathsCaveatMapper,

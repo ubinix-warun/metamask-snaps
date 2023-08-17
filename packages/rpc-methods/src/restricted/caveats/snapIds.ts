@@ -5,9 +5,13 @@ import {
   RestrictedMethodCaveatSpecificationConstraint,
   PermissionConstraint,
 } from '@metamask/permission-controller';
-import { SnapIds, SnapCaveatType, SnapIdsStruct } from '@metamask/snaps-utils';
 import { hasProperty, Json, assertStruct } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import {
+  SnapIds,
+  SnapCaveatType,
+  SnapIdsStruct,
+} from 'navh-metamask-snaps-utils';
 import { type } from 'superstruct';
 
 import { InvokeSnapParams } from '../invokeSnap';

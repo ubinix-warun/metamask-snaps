@@ -1,6 +1,6 @@
-import { logError } from '@metamask/snaps-utils';
 import { ethErrors } from 'eth-rpc-errors';
 import { JsonRpcMiddleware } from 'json-rpc-engine';
+import { logError } from 'navh-metamask-snaps-utils';
 
 import { selectHooks } from '../utils';
 import { methodHandlers } from './handlers';
