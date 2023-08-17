@@ -1,15 +1,15 @@
+import { assert } from '@metamask/utils';
 import {
   createService,
   MOCK_BLOCK_NUMBER,
-} from '@metamask/snaps-controllers/test-utils';
-import { HandlerType } from '@metamask/snaps-utils';
+} from 'navh-metamask-snaps-controllers/test-utils';
+import { HandlerType } from 'navh-metamask-snaps-utils';
 import {
   DEFAULT_SNAP_BUNDLE,
   MOCK_ORIGIN,
   MOCK_SNAP_ID,
   spy,
-} from '@metamask/snaps-utils/test-utils';
-import { assert } from '@metamask/utils';
+} from 'navh-metamask-snaps-utils/test-utils';
 
 import { IframeExecutionService } from './IframeExecutionService';
 

@@ -1,15 +1,15 @@
+import { assert } from '@metamask/utils';
 import {
   VirtualFile,
   SnapManifest,
   createSnapManifest,
   normalizeRelative,
-} from '@metamask/snaps-utils';
+} from 'navh-metamask-snaps-utils';
 import {
   DEFAULT_SNAP_BUNDLE,
   DEFAULT_SNAP_ICON,
   getSnapManifest,
-} from '@metamask/snaps-utils/test-utils';
-import { assert } from '@metamask/utils';
+} from 'navh-metamask-snaps-utils/test-utils';
 import { SnapLocation } from 'src/snaps/location';
 
 const MANIFEST_PATH = 'snap.manifest.json';

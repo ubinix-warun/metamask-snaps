@@ -1,4 +1,4 @@
-import { HandlerType, SnapId } from '@metamask/snaps-utils';
+import { HandlerType, SnapId } from 'navh-metamask-snaps-utils';
 
 import { createService, MOCK_BLOCK_NUMBER } from '../../test-utils';
 import { SnapErrorJson } from '../ExecutionService';

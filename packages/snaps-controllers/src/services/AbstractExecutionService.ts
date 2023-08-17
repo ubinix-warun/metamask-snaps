@@ -1,12 +1,6 @@
 import ObjectMultiplex from '@metamask/object-multiplex';
 import { BasePostMessageStream } from '@metamask/post-message-stream';
 import {
-  SnapRpcHook,
-  SnapRpcHookArgs,
-  SNAP_STREAM_NAMES,
-  logError,
-} from '@metamask/snaps-utils';
-import {
   Duration,
   isJsonRpcNotification,
   isObject,
@@ -21,6 +15,12 @@ import {
 } from 'json-rpc-engine';
 import { createStreamMiddleware } from 'json-rpc-middleware-stream';
 import { nanoid } from 'nanoid';
+import {
+  SnapRpcHook,
+  SnapRpcHookArgs,
+  SNAP_STREAM_NAMES,
+  logError,
+} from 'navh-metamask-snaps-utils';
 import pump from 'pump';
 import { Duplex } from 'stream';
 
@@ -453,7 +453,7 @@ export abstract class AbstractExecutionService<WorkerType>
     snapId: string,
     options: SnapRpcHookArgs,
   ): Promise<unknown> {
-    const rpcRequestHandler = await this.getRpcRequestHandler(snapId);
+    const rpcRequestHandler = this.getRpcRequestHandler(snapId);
 
     if (!rpcRequestHandler) {
       throw new Error(

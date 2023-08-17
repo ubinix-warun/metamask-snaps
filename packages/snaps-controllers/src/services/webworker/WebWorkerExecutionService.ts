@@ -2,9 +2,9 @@ import {
   BasePostMessageStream,
   WindowPostMessageStream,
 } from '@metamask/post-message-stream';
-import { createWindow } from '@metamask/snaps-utils';
 import { assert } from '@metamask/utils';
 import { nanoid } from 'nanoid';
+import { createWindow } from 'navh-metamask-snaps-utils';
 
 import {
   AbstractExecutionService,

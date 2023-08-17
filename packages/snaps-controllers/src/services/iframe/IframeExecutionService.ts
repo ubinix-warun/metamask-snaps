@@ -2,7 +2,7 @@ import {
   WindowPostMessageStream,
   BasePostMessageStream,
 } from '@metamask/post-message-stream';
-import { createWindow } from '@metamask/snaps-utils';
+import { createWindow } from 'navh-metamask-snaps-utils';
 
 import {
   Job,

@@ -26,8 +26,27 @@ import {
   GetSubjectMetadata,
   SubjectType,
 } from '@metamask/permission-controller';
-import { WALLET_SNAP_PERMISSION_KEY } from '@metamask/rpc-methods';
 import { BlockReason } from '@metamask/snaps-registry';
+import {
+  assert,
+  Duration,
+  gtRange,
+  gtVersion,
+  hasProperty,
+  inMilliseconds,
+  isNonEmptyArray,
+  isValidSemVerRange,
+  Json,
+  NonEmptyArray,
+  satisfiesVersionRange,
+  SemVerRange,
+  timeSince,
+} from '@metamask/utils';
+import { createMachine, interpret, StateMachine } from '@xstate/fsm';
+import { ethErrors } from 'eth-rpc-errors';
+import type { Patch } from 'immer';
+import { nanoid } from 'nanoid';
+import { WALLET_SNAP_PERMISSION_KEY } from 'navh-metamask-rpc-methods';
 import {
   assertIsSnapManifest,
   DEFAULT_ENDOWMENTS,
@@ -57,26 +76,7 @@ import {
   logError,
   logWarning,
   validateFetchedSnap,
-} from '@metamask/snaps-utils';
-import {
-  assert,
-  Duration,
-  gtRange,
-  gtVersion,
-  hasProperty,
-  inMilliseconds,
-  isNonEmptyArray,
-  isValidSemVerRange,
-  Json,
-  NonEmptyArray,
-  satisfiesVersionRange,
-  SemVerRange,
-  timeSince,
-} from '@metamask/utils';
-import { createMachine, interpret, StateMachine } from '@xstate/fsm';
-import { ethErrors } from 'eth-rpc-errors';
-import type { Patch } from 'immer';
-import { nanoid } from 'nanoid';
+} from 'navh-metamask-snaps-utils';
 
 import { forceStrict, validateMachine } from '../fsm';
 import { log } from '../logging';
@@ -1145,7 +1145,7 @@ export class SnapController extends BaseController<
   async startSnap(snapId: ValidatedSnapId): Promise<void> {
     const runtime = this.#getRuntimeExpect(snapId);
 
-    if (this.state.snaps[snapId].enabled === false) {
+    if (!this.state.snaps[snapId].enabled) {
       throw new Error(`Snap "${snapId}" is disabled.`);
     }
 
@@ -1627,7 +1627,7 @@ export class SnapController extends BaseController<
 
         if (error) {
           throw ethErrors.rpc.invalidParams(
-            `The "version" field must be a valid SemVer version range if specified. Received: "${rawVersion}".`,
+            `The "version" field must be a valid SemVer version range if specified. Received: "UNKNOWN".`,
           );
         }
 
@@ -2418,7 +2418,7 @@ export class SnapController extends BaseController<
       }
     }
 
-    const handler = await this.#getRpcRequestHandler(snapId);
+    const handler = this.#getRpcRequestHandler(snapId);
     if (!handler) {
       throw new Error(
         `Snap RPC message handler not found for snap "${snapId}".`,
@@ -2451,7 +2451,7 @@ export class SnapController extends BaseController<
       handler: handlerType,
       request,
     }: SnapRpcHookArgs) => {
-      if (this.state.snaps[snapId].enabled === false) {
+      if (!this.state.snaps[snapId].enabled) {
         throw new Error(`Snap "${snapId}" is disabled.`);
       }
 

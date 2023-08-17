@@ -1,15 +1,4 @@
 import {
-  createSnapManifest,
-  DEFAULT_REQUESTED_SNAP_VERSION,
-  getTargetVersion,
-  isValidUrl,
-  NpmSnapIdStruct,
-  SnapManifest,
-  VirtualFile,
-  normalizeRelative,
-  parseJson,
-} from '@metamask/snaps-utils';
-import {
   assert,
   assertIsSemVerVersion,
   assertStruct,
@@ -19,6 +8,17 @@ import {
 } from '@metamask/utils';
 import concat from 'concat-stream';
 import createGunzipStream from 'gunzip-maybe';
+import {
+  createSnapManifest,
+  DEFAULT_REQUESTED_SNAP_VERSION,
+  getTargetVersion,
+  isValidUrl,
+  NpmSnapIdStruct,
+  SnapManifest,
+  VirtualFile,
+  normalizeRelative,
+  parseJson,
+} from 'navh-metamask-snaps-utils';
 import pump from 'pump';
 import { ReadableWebToNodeStream } from 'readable-web-to-node-stream';
 import { Readable, Writable } from 'stream';

@@ -1,11 +1,11 @@
-import { SnapManifest, VirtualFile } from '@metamask/snaps-utils';
 import { assert } from '@metamask/utils';
+import { SnapManifest, VirtualFile } from 'navh-metamask-snaps-utils';
 
 import { HttpLocation } from './http';
 import { LocalLocation } from './local';
 import { NpmLocation, NpmOptions } from './npm';
 
-declare module '@metamask/snaps-utils' {
+declare module 'navh-metamask-snaps-utils' {
   interface DataMap {
     /**
      * Fully qualified, canonical path for the file in {@link https://github.com/MetaMask/SIPs/blob/main/SIPS/sip-8.md SIP-8 } URI format.

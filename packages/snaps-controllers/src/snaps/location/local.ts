@@ -1,10 +1,10 @@
+import { assert, assertStruct } from '@metamask/utils';
 import {
   LocalSnapIdStruct,
   SnapIdPrefixes,
   SnapManifest,
   VirtualFile,
-} from '@metamask/snaps-utils';
-import { assert, assertStruct } from '@metamask/utils';
+} from 'navh-metamask-snaps-utils';
 
 import { HttpLocation, HttpOptions } from './http';
 import { SnapLocation } from './location';

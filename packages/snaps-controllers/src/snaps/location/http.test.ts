@@ -1,11 +1,11 @@
-import { NpmSnapFileNames } from '@metamask/snaps-utils';
+import { assert } from '@metamask/utils';
+import fetchMock from 'jest-fetch-mock';
+import { NpmSnapFileNames } from 'navh-metamask-snaps-utils';
 import {
   DEFAULT_SNAP_BUNDLE,
   DEFAULT_SNAP_ICON,
   getSnapManifest,
-} from '@metamask/snaps-utils/test-utils';
-import { assert } from '@metamask/utils';
-import fetchMock from 'jest-fetch-mock';
+} from 'navh-metamask-snaps-utils/test-utils';
 
 import { HttpLocation } from './http';
 

@@ -1,4 +1,4 @@
-import { HandlerType } from '@metamask/snaps-utils';
+import { HandlerType } from 'navh-metamask-snaps-utils';
 
 import { createService } from '../test-utils';
 import { ExecutionServiceArgs } from './AbstractExecutionService';

@@ -3,7 +3,7 @@ import {
   PermissionType,
   SubjectType,
 } from '@metamask/permission-controller';
-import { SnapCaveatType } from '@metamask/snaps-utils';
+import { SnapCaveatType } from 'navh-metamask-snaps-utils';
 
 import { SnapEndowments } from '.';
 import {

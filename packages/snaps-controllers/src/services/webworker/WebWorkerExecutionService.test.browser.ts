@@ -1,11 +1,11 @@
-import { HandlerType } from '@metamask/snaps-utils';
+import { HandlerType } from 'navh-metamask-snaps-utils';
 import {
   DEFAULT_SNAP_BUNDLE,
   MOCK_LOCAL_SNAP_ID,
   MOCK_ORIGIN,
   MOCK_SNAP_ID,
   spy,
-} from '@metamask/snaps-utils/test-utils';
+} from 'navh-metamask-snaps-utils/test-utils';
 
 import { createService, MOCK_BLOCK_NUMBER } from '../../test-utils';
 import {

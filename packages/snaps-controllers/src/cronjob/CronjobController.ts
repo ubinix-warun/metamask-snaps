@@ -3,6 +3,7 @@ import {
   RestrictedControllerMessenger,
 } from '@metamask/base-controller';
 import { GetPermissions } from '@metamask/permission-controller';
+import { Duration, inMilliseconds } from '@metamask/utils';
 import {
   HandlerType,
   SnapId,
@@ -11,8 +12,7 @@ import {
   CronjobSpecification,
   parseCronExpression,
   logError,
-} from '@metamask/snaps-utils';
-import { Duration, inMilliseconds } from '@metamask/utils';
+} from 'navh-metamask-snaps-utils';
 
 import {
   GetAllSnaps,

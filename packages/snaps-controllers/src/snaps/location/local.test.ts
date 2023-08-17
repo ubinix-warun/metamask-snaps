@@ -1,8 +1,8 @@
+import fetchMock from 'jest-fetch-mock';
 import {
   DEFAULT_SNAP_BUNDLE,
   getSnapManifest,
-} from '@metamask/snaps-utils/test-utils';
-import fetchMock from 'jest-fetch-mock';
+} from 'navh-metamask-snaps-utils/test-utils';
 
 import { LocalLocation } from './local';
 

@@ -1,4 +1,7 @@
-import { MockPostMessageStream, sleep } from '@metamask/snaps-utils/test-utils';
+import {
+  MockPostMessageStream,
+  sleep,
+} from 'navh-metamask-snaps-utils/test-utils';
 
 import { ProxyPostMessageStream } from './ProxyPostMessageStream';
 

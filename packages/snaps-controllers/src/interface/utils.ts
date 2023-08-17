@@ -1,5 +1,5 @@
-import { Component, NodeType } from '@metamask/snaps-ui';
-import { ComponentState } from '@metamask/snaps-utils';
+import { Component, NodeType } from 'navh-metamask-snaps-ui';
+import { ComponentState } from 'navh-metamask-snaps-utils';
 
 export const constructState = (
   state: ComponentState,

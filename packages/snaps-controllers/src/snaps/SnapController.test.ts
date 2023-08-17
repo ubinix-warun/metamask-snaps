@@ -4,7 +4,12 @@ import {
   SubjectPermissions,
   ValidPermission,
 } from '@metamask/permission-controller';
-import { WALLET_SNAP_PERMISSION_KEY } from '@metamask/rpc-methods';
+import { AssertionError, SemVerVersion, SemVerRange } from '@metamask/utils';
+import { ethErrors } from 'eth-rpc-errors';
+import fetchMock from 'jest-fetch-mock';
+import { createAsyncMiddleware, JsonRpcEngine } from 'json-rpc-engine';
+import { createEngineStream } from 'json-rpc-middleware-stream';
+import { WALLET_SNAP_PERMISSION_KEY } from 'navh-metamask-rpc-methods';
 import {
   DEFAULT_ENDOWMENTS,
   getSnapChecksum,
@@ -15,7 +20,7 @@ import {
   VirtualFile,
   DEFAULT_REQUESTED_SNAP_VERSION,
   ValidatedSnapId,
-} from '@metamask/snaps-utils';
+} from 'navh-metamask-snaps-utils';
 import {
   DEFAULT_SNAP_BUNDLE,
   DEFAULT_SNAP_ICON,
@@ -29,12 +34,7 @@ import {
   MOCK_LOCAL_SNAP_ID,
   MOCK_ORIGIN,
   MOCK_SNAP_ID,
-} from '@metamask/snaps-utils/test-utils';
-import { AssertionError, SemVerVersion, SemVerRange } from '@metamask/utils';
-import { ethErrors } from 'eth-rpc-errors';
-import fetchMock from 'jest-fetch-mock';
-import { createAsyncMiddleware, JsonRpcEngine } from 'json-rpc-engine';
-import { createEngineStream } from 'json-rpc-middleware-stream';
+} from 'navh-metamask-snaps-utils/test-utils';
 import pump from 'pump';
 import { Duplex } from 'stream';
 

@@ -10,11 +10,6 @@ import {
   SubjectType,
 } from '@metamask/permission-controller';
 import {
-  assertIsRpcOrigins,
-  RpcOrigins,
-  SnapCaveatType,
-} from '@metamask/snaps-utils';
-import {
   hasProperty,
   isPlainObject,
   Json,
@@ -22,6 +17,11 @@ import {
   assert,
 } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import {
+  assertIsRpcOrigins,
+  RpcOrigins,
+  SnapCaveatType,
+} from 'navh-metamask-snaps-utils';
 
 import { SnapEndowments } from './enum';
 

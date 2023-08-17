@@ -1,6 +1,6 @@
 import { PermissionConstraint } from '@metamask/permission-controller';
-import { SnapCaveatType } from '@metamask/snaps-utils';
-import { MOCK_ORIGIN } from '@metamask/snaps-utils/test-utils';
+import { SnapCaveatType } from 'navh-metamask-snaps-utils';
+import { MOCK_ORIGIN } from 'navh-metamask-snaps-utils/test-utils';
 
 import { SnapEndowments } from '../snaps/endowments';
 

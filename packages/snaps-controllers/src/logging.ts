@@ -1,5 +1,5 @@
-import { snapsLogger } from '@metamask/snaps-utils';
 import { createModuleLogger } from '@metamask/utils';
+import { snapsLogger } from 'navh-metamask-snaps-utils';
 
 /**
  * A logging function specific to this package. The log messages don't show up

@@ -1,10 +1,10 @@
 import { SnapsRegistryDatabase } from '@metamask/snaps-registry';
+import { SemVerRange, SemVerVersion } from '@metamask/utils';
+import fetchMock from 'jest-fetch-mock';
 import {
   DEFAULT_SNAP_SHASUM,
   MOCK_SNAP_ID,
-} from '@metamask/snaps-utils/test-utils';
-import { SemVerRange, SemVerVersion } from '@metamask/utils';
-import fetchMock from 'jest-fetch-mock';
+} from 'navh-metamask-snaps-utils/test-utils';
 
 import { getRestrictedSnapsRegistryControllerMessenger } from '../../test-utils';
 import { JsonSnapsRegistry, JsonSnapsRegistryArgs } from './json';

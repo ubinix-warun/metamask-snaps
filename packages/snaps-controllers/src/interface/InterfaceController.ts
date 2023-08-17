@@ -7,10 +7,10 @@ import {
   BaseControllerV2 as BaseController,
   RestrictedControllerMessenger,
 } from '@metamask/base-controller';
-import { Component } from '@metamask/snaps-ui';
-import { ComponentState } from '@metamask/snaps-utils';
 import { Json, assert } from '@metamask/utils';
 import { nanoid } from 'nanoid';
+import { Component } from 'navh-metamask-snaps-ui';
+import { ComponentState } from 'navh-metamask-snaps-utils';
 
 import { constructState } from './utils';
 

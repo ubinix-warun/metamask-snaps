@@ -1,3 +1,4 @@
+import { assert, assertStruct } from '@metamask/utils';
 import {
   SnapManifest,
   VirtualFile,
@@ -6,8 +7,7 @@ import {
   createSnapManifest,
   normalizeRelative,
   parseJson,
-} from '@metamask/snaps-utils';
-import { assert, assertStruct } from '@metamask/utils';
+} from 'navh-metamask-snaps-utils';
 
 import { SnapLocation } from './location';
 

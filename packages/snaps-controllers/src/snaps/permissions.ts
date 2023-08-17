@@ -2,13 +2,13 @@ import {
   PermissionConstraint,
   PermissionSpecificationConstraint,
 } from '@metamask/permission-controller';
+import { hasProperty } from '@metamask/utils';
 import {
   caveatMappers,
   restrictedMethodPermissionBuilders,
   selectHooks,
-} from '@metamask/rpc-methods';
-import { SnapPermissions } from '@metamask/snaps-utils';
-import { hasProperty } from '@metamask/utils';
+} from 'navh-metamask-rpc-methods';
+import { SnapPermissions } from 'navh-metamask-snaps-utils';
 
 import {
   endowmentCaveatMappers,

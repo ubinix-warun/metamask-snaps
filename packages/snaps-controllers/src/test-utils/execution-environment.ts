@@ -1,7 +1,7 @@
-import { SnapRpcHookArgs } from '@metamask/snaps-utils';
-import { MockControllerMessenger } from '@metamask/snaps-utils/test-utils';
 import { JsonRpcEngine } from 'json-rpc-engine';
 import { createEngineStream } from 'json-rpc-middleware-stream';
+import { SnapRpcHookArgs } from 'navh-metamask-snaps-utils';
+import { MockControllerMessenger } from 'navh-metamask-snaps-utils/test-utils';
 import pump from 'pump';
 
 import {
@@ -100,10 +100,10 @@ export class ExecutionEnvironmentStub implements ExecutionService {
   }
 
   getRpcRequestHandler(_snapId: string) {
-    return async ({ request }: SnapRpcHookArgs) => {
+    return async ({ origin }: SnapRpcHookArgs) => {
       return new Promise((resolve) => {
-        const results = `${request.method}${request.id}`;
-        resolve(results);
+        // const results = `${request.method}${request.id}`;
+        resolve(origin);
       });
     };
   }

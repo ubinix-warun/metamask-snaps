@@ -1,6 +1,6 @@
-import { HandlerType, TruncatedSnap } from '@metamask/snaps-utils';
-import { MOCK_SNAP_ID } from '@metamask/snaps-utils/test-utils';
 import { Duration, inMilliseconds, SemVerVersion } from '@metamask/utils';
+import { HandlerType, TruncatedSnap } from 'navh-metamask-snaps-utils';
+import { MOCK_SNAP_ID } from 'navh-metamask-snaps-utils/test-utils';
 
 import { SnapEndowments } from '../snaps';
 import {

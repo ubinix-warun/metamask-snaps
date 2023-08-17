@@ -3,7 +3,6 @@ import {
   RestrictedControllerMessenger,
 } from '@metamask/base-controller';
 import { SnapsRegistryDatabase, verify } from '@metamask/snaps-registry';
-import { SnapId } from '@metamask/snaps-utils';
 import {
   assert,
   Duration,
@@ -11,6 +10,7 @@ import {
   inMilliseconds,
   satisfiesVersionRange,
 } from '@metamask/utils';
+import { SnapId } from 'navh-metamask-snaps-utils';
 
 import {
   SnapsRegistry,

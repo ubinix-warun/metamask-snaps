@@ -9,11 +9,6 @@ import {
   SubjectType,
 } from '@metamask/permission-controller';
 import {
-  SnapCaveatType,
-  CronjobSpecification,
-  isCronjobSpecificationArray,
-} from '@metamask/snaps-utils';
-import {
   assert,
   hasProperty,
   isPlainObject,
@@ -21,6 +16,11 @@ import {
   NonEmptyArray,
 } from '@metamask/utils';
 import { ethErrors } from 'eth-rpc-errors';
+import {
+  SnapCaveatType,
+  CronjobSpecification,
+  isCronjobSpecificationArray,
+} from 'navh-metamask-snaps-utils';
 
 import { SnapEndowments } from './enum';
 

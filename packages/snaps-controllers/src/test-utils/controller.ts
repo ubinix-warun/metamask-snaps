@@ -7,8 +7,8 @@ import {
   SubjectMetadata,
   SubjectType,
 } from '@metamask/permission-controller';
-import { WALLET_SNAP_PERMISSION_KEY } from '@metamask/rpc-methods';
-import { SnapCaveatType, ValidatedSnapId } from '@metamask/snaps-utils';
+import { Json } from '@metamask/utils';
+import { ethErrors } from 'eth-rpc-errors';
 import {
   MockControllerMessenger,
   getPersistedSnapObject,
@@ -16,9 +16,9 @@ import {
   MOCK_LOCAL_SNAP_ID,
   MOCK_ORIGIN,
   MOCK_SNAP_ID,
-} from '@metamask/snaps-utils/test-utils';
-import { Json } from '@metamask/utils';
-import { ethErrors } from 'eth-rpc-errors';
+} from 'navh-metamask-naps-utils/test-utils';
+import { WALLET_SNAP_PERMISSION_KEY } from 'navh-metamask-rpc-methods';
+import { SnapCaveatType, ValidatedSnapId } from 'navh-metamask-snaps-utils';
 
 import { CronjobControllerActions, CronjobControllerEvents } from '../cronjob';
 import {
